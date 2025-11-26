@@ -1,4 +1,4 @@
-# AlignSynch Marketing Site
+# AlignSynch Website Mockup and Content Registry
 
 ![AlignSynch Home](assets/img/home.svg)
 
