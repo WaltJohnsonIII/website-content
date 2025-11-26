@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
     { name: 'Home', to: '/' },
     { name: 'Relationships', to: '/relationships' },
     { name: 'How it Works', to: '/how-it-works' },
-    { name: 'Pricing', to: '#' },
+    { name: 'Pricing', to: '/pricing' },
     { name: 'FAQ', to: '/faq' },
     { name: 'About Us', to: '/about-us' },
   ];

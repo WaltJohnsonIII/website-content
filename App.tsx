@@ -8,6 +8,7 @@ import { AboutUsPage } from './pages/AboutUsPage';
 import { FAQPage } from './pages/FAQPage';
 import { RelationshipsPage } from './pages/RelationshipsPage';
 import { TemplateDetailPage } from './pages/TemplateDetailPage';
+import { PricingPage } from './pages/PricingPage';
 
 // ScrollToTop component ensures the window scrolls to top on route change
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
             <Route path="/relationships/demo" element={<TemplateDetailPage />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
             <Route path="/faq" element={<FAQPage />} />
           </Routes>
         </main>
