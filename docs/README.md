@@ -1,5 +1,7 @@
 # Home Page (Index) Documentation
 
+![AlignSynch Home](../assets/img/home.svg)
+
 This document outlines the content strategy, layout intent, and component structure for the AlignSynch Home Page.
 
 ## Layout Intent

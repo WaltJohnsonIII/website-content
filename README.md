@@ -1,6 +1,6 @@
 # AlignSynch Marketing Site
 
-![AlignSynch Hero Section](hero-screenshot.png)
+![AlignSynch Home](assets/img/home.svg)
 
 **AlignSynch** is a comprehensive relationship management tool designed to help users align and synchronize expectations in both personal and business lives. It acts as a communication bridge to uncover gaps in understanding and foster better connections.
 
@@ -58,7 +58,7 @@ A comprehensive list of reasons to use the platform, including:
 
 ## Tech Stack
 
-- **Frontend**: React 19
+- **Frontend**: React 18
 - **Styling**: Tailwind CSS (via CDN for this build)
 - **Icons**: Lucide React
 - **Typography**: Inter Font Family
