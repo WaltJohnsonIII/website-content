@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Logo } from './Logo';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,10 +26,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-             <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-700 rounded-md flex items-center justify-center text-white font-bold italic text-lg shadow-sm">
-                AS
-             </div>
-             <span className="font-bold text-xl tracking-tight text-slate-800">AlignSynch</span>
+             <Logo variant="full" className="h-10" />
           </Link>
 
           {/* Desktop Nav */}

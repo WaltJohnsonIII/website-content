@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
     return (
@@ -9,9 +10,7 @@ export const Footer: React.FC = () => {
                 
                 <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
                     <Link to="/" className="flex items-center gap-2 mb-2">
-                        <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-700 rounded-md flex items-center justify-center text-white font-bold italic text-lg shadow-sm">
-                            AS
-                        </div>
+                        <Logo variant="full" className="h-8" />
                         <span className="text-xs text-slate-500 ml-2">Improve Important Relationships</span>
                     </Link>
                     <div className="flex gap-4 mt-2">

@@ -1,0 +1,15 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Part -->
+  <g transform="translate(0, -10) scale(0.8)">
+      <text x="0" y="70" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="80" fill="#0ea5e9">A</text>
+      <text x="45" y="70" font-family="Arial, sans-serif" font-weight="900" font-style="italic" font-size="80" fill="#0f172a">S</text>
+      <g transform="translate(10, 78)">
+         <polygon points="0,0 15,0 22,7 15,14 0,14 7,7" fill="#84cc16" />
+         <polygon points="18,0 33,0 40,7 33,14 18,14 25,7" fill="#84cc16" />
+         <polygon points="36,0 51,0 58,7 51,14 36,14 43,7" fill="#84cc16" />
+      </g>
+  </g>
+  <!-- Text Part -->
+  <text x="85" y="52" font-family="Arial, sans-serif" font-weight="700" font-size="38" fill="#0f172a">Align</text>
+  <text x="182" y="52" font-family="Arial, sans-serif" font-weight="300" font-size="38" fill="#334155">Synch</text>
+</svg>
