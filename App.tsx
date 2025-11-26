@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { HowItWorksPage } from './pages/HowItWorksPage';
+import { AboutUsPage } from './pages/AboutUsPage';
 
 // ScrollToTop component ensures the window scrolls to top on route change
 const ScrollToTop = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
           </Routes>
         </main>
         <Footer />
