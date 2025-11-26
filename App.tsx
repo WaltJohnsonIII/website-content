@@ -6,6 +6,8 @@ import { Home } from './pages/Home';
 import { HowItWorksPage } from './pages/HowItWorksPage';
 import { AboutUsPage } from './pages/AboutUsPage';
 import { FAQPage } from './pages/FAQPage';
+import { RelationshipsPage } from './pages/RelationshipsPage';
+import { TemplateDetailPage } from './pages/TemplateDetailPage';
 
 // ScrollToTop component ensures the window scrolls to top on route change
 const ScrollToTop = () => {
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/relationships" element={<RelationshipsPage />} />
+            <Route path="/relationships/demo" element={<TemplateDetailPage />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/faq" element={<FAQPage />} />

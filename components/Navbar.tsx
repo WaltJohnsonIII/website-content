@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
   // We keep 'href' for external or hash links, and 'to' for internal router links
   const navLinks = [
     { name: 'Home', to: '/' },
-    { name: 'Relationships', to: '#' },
+    { name: 'Relationships', to: '/relationships' },
     { name: 'How it Works', to: '/how-it-works' },
     { name: 'Pricing', to: '#' },
     { name: 'FAQ', to: '/faq' },
