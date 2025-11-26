@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // We keep 'href' for external or hash links, and 'to' for internal router links
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Relationships', href: '#' },
-    { name: 'How it Works', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'Home', to: '/' },
+    { name: 'Relationships', to: '#' },
+    { name: 'How it Works', to: '/how-it-works' },
+    { name: 'Pricing', to: '#' },
+    { name: 'FAQ', to: '#' },
+    { name: 'About Us', to: '#' },
   ];
 
   return (
@@ -22,23 +24,33 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+          <Link to="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
              <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-700 rounded-md flex items-center justify-center text-white font-bold italic text-lg shadow-sm">
                 AS
              </div>
              <span className="font-bold text-xl tracking-tight text-slate-800">AlignSynch</span>
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-slate-600 hover:text-cyan-600 text-sm font-medium transition-colors"
-              >
-                {link.name}
-              </a>
+              link.to !== '#' ? (
+                <Link
+                  key={link.name}
+                  to={link.to}
+                  className="text-slate-600 hover:text-cyan-600 text-sm font-medium transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  key={link.name}
+                  href={link.to}
+                  className="text-slate-600 hover:text-cyan-600 text-sm font-medium transition-colors"
+                >
+                  {link.name}
+                </a>
+              )
             ))}
           </nav>
 
@@ -69,13 +81,25 @@ export const Navbar: React.FC = () => {
         <div className="md:hidden bg-white border-t border-slate-100 pb-4">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-50"
-              >
-                {link.name}
-              </a>
+              link.to !== '#' ? (
+                <Link
+                  key={link.name}
+                  to={link.to}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-50"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                    key={link.name}
+                    href={link.to}
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-50"
+                >
+                    {link.name}
+                </a>
+              )
             ))}
             <div className="pt-4 flex flex-col space-y-2 px-3">
                 <button className="w-full text-left text-slate-600 font-medium py-2">Sign in</button>
