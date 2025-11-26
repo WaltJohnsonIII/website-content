@@ -77,3 +77,5 @@ This document details the content and implementation of the Relationships Listin
 
 ### Chart Component
 The "Aspect Chart" is built using pure Tailwind CSS to simulate the slider controls and bar charts seen in the mockup. It creates a visual representation of alignment gaps.
+
+![Relationships Mockup Page](../assets/img/relationships-page.svg)

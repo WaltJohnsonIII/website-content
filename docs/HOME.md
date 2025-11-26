@@ -3,7 +3,7 @@
 ![AlignSynch Home](../assets/img/home.svg)
 
 ## Design Reference
-![Original Screenshot](../assets/img/Screenshot_4-7-2025_221158_alignsynch.com.jpeg)
+![Original Screenshot](../assets/img/home-page.svg)
 
 This document serves as a logical content snippet registry for the Home page. It lists all creative copy, in order, by section, mirroring the flow and layout of the actual page.
 

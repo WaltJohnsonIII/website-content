@@ -1,6 +1,6 @@
 # FAQ Page Documentation
 
-![FAQ](assets/img/faq.svg)
+![FAQ](../assets/img/faq.svg)
 
 ## Design Reference
 *Please upload the original design image as: `assets/img/faq-design.jpeg`*

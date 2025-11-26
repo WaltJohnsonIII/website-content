@@ -7,6 +7,8 @@
 
 This document details the content and implementation of the "About Us" page (`/about-us`).
 
+![About Us Mockup Image](../assets/img/about-us-page.svg)
+
 ---
 
 ## Content Registry
